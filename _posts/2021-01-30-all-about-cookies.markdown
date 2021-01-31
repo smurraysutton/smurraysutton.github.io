@@ -1,10 +1,9 @@
 ---
-layout: default
+layout: post
 title:  "All about cookies"
 date:   2021-01-30 15:24:50 +0000
 categories: code tracking
 ---
-# All about cookies
 
 I’ve been struggling through the vagueries of the updated cookie laws lately. It brought home how much we rely on analytics to do portions of our jobs these days. Although in local government we aren’t doing the most sophisticated analysis, the data we get does let us know simple truths about our website. It keeps us honest about what the real uses of our site are and helps to focus our efforts. This in turn can save money that is given to us by tax payers.
 
