@@ -2,7 +2,7 @@
 layout: post
 title:  "What Margaret and Tony can teach us about systems"
 date:   2021-02-03 15:24:50 +0000
-categories: systems
+categories: systems design
 ---
 
 To research

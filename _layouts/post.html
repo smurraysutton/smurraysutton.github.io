@@ -5,19 +5,18 @@ layout: default
 
 <time datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time>
 {{ content }}
-<div class="tags-expo-section">
+<nav class="tags-expo-section">
     {% for tag in site.categories %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag | first }}</h2>
     <ul class="tags-expo-posts">
       {% for post in tag[1] %}
-        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+
       <li>
-        {{ post.title }}
+        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       <small class="post-date">{{ post.date | date_to_string }}</small>
       </li>
-      </a>
+
       {% endfor %}
     </ul>
     {% endfor %}
-  </div>
-</div>
+  </nav>
