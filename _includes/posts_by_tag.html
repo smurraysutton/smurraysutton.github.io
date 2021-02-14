@@ -1,12 +1,27 @@
 <nav class="tags-expo-section">
+  <div class="tags_by_column">
+  {% for tag in site.categories %}
+    {% assign t = tag | first %}
+    {% assign posts = tag | last %}
+    <span class="tag_wrapper"><a href="#{{t | downcase | replace:" ","-" }}">{{t | downcase | replace:" ","-" }}</a><span class="highlight">{{ posts | size }}</span></span>
+  {% endfor %}
+  </div>
+  <ul class="tags">
+{% for tag in site.categories %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  <li><a href="#{{t | downcase | replace:" ","-" }}">{{t | downcase | replace:" ","-" }}</a><span class="highlight">{{ posts | size }}</span></li>
+{% endfor %}
+</ul>
+
+  <h2>Posts by category</h2>
     {% for tag in site.categories %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag | first }}</h2>
+    <h3 id="{{ tag[0] | slugify }}">{{ tag | first }}</h3>
     <ul class="tags-expo-posts">
       {% for post in tag[1] %}
 
       <li>
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <small class="post-date">{{ post.date | date_to_string }}</small>
       </li>
 
       {% endfor %}
