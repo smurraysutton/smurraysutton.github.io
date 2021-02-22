@@ -1,6 +1,12 @@
 ---
 
 ---
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   background: rgb(255,214,204);
 background: linear-gradient(180deg, rgba(255,214,204,1) 28%, rgba(48,255,209,1) 99%) no-repeat;
@@ -10,7 +16,7 @@ min-height: 100%;
 body {
   color: #3a3880;
   font-family: sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
 //   background: rgb(255,214,204);
 // background: linear-gradient(180deg, rgba(255,214,204,1) 28%, rgba(48,255,209,1) 99%);
@@ -20,48 +26,138 @@ a  {
   text-decoration-style: solid;
   text-decoration-thickness: 2px;
 }
+
+body > header h1 a {
+  color:#3a3880;
+}
+
+// basic layout
+
+//standard margins
+
 main {
 
 display: grid;
+header, main > nav, article, h1, h2, ol, ul {
+   margin-bottom: 1rem;
 }
-article, header {
+}
+
+article, body > header, main > nav {
 box-sizing: border-box;
 margin-left: 1rem;
 margin-right: 1rem;
-border-color: #3a3880;
-margin-bottom: 1rem;
+}
+
+header, article, main > nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 article {
-border-bottom: 10px solid;
+border-bottom: 10px solid #28d9b1;
+padding-bottom: 2rem;
+  header {
+    border-bottom: 2px solid #3a3880;
+  }
 }
 
-header {
-border-bottom: 2px solid;
-}
-
-header h1 {
-font-size: 1.5rem;
-margin-bottom: 0;
-}
 
 p {
 margin: 0 0 1rem 0;
 }
 
+blockquote {
+  background: #cdeccd;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  p {
+    font-style: italic;
+  }
+  footer {
+    font-weight:600;
+  }
+}
+
+// Site branding
+body > header h1 {
+  font-size: 1.5rem;
+}
+
+
+// typography
 h1, h2 {
 line-height: 1;
-margin-bottom: 0.5rem;
 }
 h1 {
-font-size: 3rem;
+font-size: 2rem;
 
 }
 
 h2 {
-font-size: 2rem;
+font-size: 1.5rem;
 margin: 2.5rem 0 0.5rem 0;
 }
+
+h3 {
+  font-size: 1rem;
+  margin: 1.5rem 0 0 0;
+}
+
+main {
+  ol, ul {
+    margin-left: 20px;
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+
+
+// navigation
+// Remove native list styling from lists
+
+nav {
+    ul, ol{
+      margin: 0;
+      padding: 0;
+     li {
+      list-style: none;
+      margin-bottom:1rem;
+     }
+     h2 {
+       margin-bottom: 0;
+     }
+
+  }
+}
+
+
+// for highlights in navigation lists
+
+nav ul li span {
+  background: aliceblue;
+  padding: 1px 9px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-left: 5px;
+
+}
+
+// trying out column layout instead for tags_by_column
+
+nav .tags_by_column {
+  display: grid;
+  grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+}
+
+nav .tags_by_column {
+
+}
+
   /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */

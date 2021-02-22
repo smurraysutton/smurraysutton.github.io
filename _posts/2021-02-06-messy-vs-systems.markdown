@@ -8,7 +8,7 @@ categories: systems design
 To research
 ---
 * what blair and thatcher really thought about systems/organisation
-* That talking polictics episode
+* That talking politics episode
 
 According to this podcast [ref] from Talking Politics, one thing that set Tony Blair and Margaret Thatcher apart was their approach to systems. Thatcher could deal with messiness, whereas Blair always tried to make everything work together.
 

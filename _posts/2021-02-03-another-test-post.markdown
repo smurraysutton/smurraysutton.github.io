@@ -8,7 +8,6 @@ categories: accessibility development design html
 But daddy rules too
 
 you are You.
----
 
 It's been really nice picking up Jekyll again after half-looking at it a while ago.
 It wasn't nearly as confusing as I expected it to be and weirdly things just clicked in a way I wasn't expecting. Having finally been able to stop worrying about whether the dependencies were all in order and whether I needed several possible upgrades, I've actually pulled something together that looks like a very basic website.

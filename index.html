@@ -5,12 +5,14 @@
 layout: default
 title: home
 ---
-<ul>
+<nav aria-label="Posts by date">
+<ol>
   {% for post in site.posts %}
   <!-- Maybe think about having posts divided into years? -->
     <li>
-      <time> {{ post.date | date_to_long_string }} </time><a href="{{ post.url }}">{{ post.title }}</a>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <time> {{ post.date | date_to_long_string }} </time>
     </li>
   {% endfor %}
-</ul>
-{% include posts_by_tag.html %}
+</ol>
+</nav>
