@@ -38,7 +38,7 @@ body > header h1 a {
 main {
 
 display: grid;
-header, main > nav, article, h1, h2, ol, ul {
+header, main > nav, article, h2, ol, ul {
    margin-bottom: 1rem;
 }
 }
@@ -57,9 +57,6 @@ header, article, main > nav {
 article {
 border-bottom: 10px solid #28d9b1;
 padding-bottom: 2rem;
-  header {
-    border-bottom: 2px solid #3a3880;
-  }
 }
 
 
@@ -82,6 +79,7 @@ blockquote {
 
 // Site branding
 body > header h1 {
+  font-weight: 100;
   font-size: 1.5rem;
 }
 
@@ -92,8 +90,14 @@ line-height: 1;
 }
 h1 {
 font-size: 2rem;
-
 }
+
+article {
+  h2, h3 {
+   font-weight: 100;
+  }
+}
+
 
 h2 {
 font-size: 1.5rem;
@@ -129,6 +133,9 @@ nav {
      }
      h2 {
        margin-bottom: 0;
+     }
+     time {
+       font-weight: bold;
      }
 
   }
@@ -191,7 +198,8 @@ nav .tags_by_column {
 /* desktops (landscape) ----------- */
 @media screen and (min-width : 1025px) {
 /* Styles */
- article {
-   max-width: 50%;
+ body {
+   margin: 2rem 0 0 2rem;
+   max-width: 40%;
  }
 }

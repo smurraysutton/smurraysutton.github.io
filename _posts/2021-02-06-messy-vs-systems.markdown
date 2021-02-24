@@ -3,6 +3,7 @@ layout: post
 title:  "What Margaret and Tony can teach us about systems"
 date:   2021-02-03 15:24:50 +0000
 categories: systems design
+description: Finding out a bit more about these two leaders approach to systems gave me some useful ideas about my own thinking
 ---
 
 To research
